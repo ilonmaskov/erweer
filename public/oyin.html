@@ -6,13 +6,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-  <body style="background-image: url(./img/Background.svg);" class="bg-[#12192a]">
+  <body
+    style="background-image: url(./img/Background.svg)"
+    class="bg-[#12192a]"
+  >
     <header class="pt-5 pb-5 bg-[#121829] border-b-2">
       <div
         class="max-w-[1240px] ml-auto mr-auto flex justify-between items-center px-5"
       >
-        <a class="flex" href=""><img src="./img/logo-(3).png""></a>
+        <!-- <a class="flex" href=""><img src="./img/logo-(3).png""></a>
         <ul class="flex gap-4 md:gap-8">
           <li class="">
             <a class="text-[#A8AEBF]" href="./index.html">Anime</a>
@@ -22,30 +27,54 @@
           </li>
           <li class="">
             <a class="text-[#A8AEBF]" href="./cartoon.html">Cartoon's</a>
-          </li>
-          <li class="">
+          </li> -->
+          <!-- <li class="">
             <a class="text-[#A8AEBF]" href="./oyin.html">O'yin o'ynash</a>
-          </li>
-
-          
+          </li> -->
         </ul>
       </div>
     </header>
-    <section class=" pb- pt-12 ">
+    <section class="pb-12 pt-12">
       <div class="max-w-[1240px] ml-auto mr-auto px-5">
-        <h1 class="text-white text-6xl font-medium mb-6 text-center">Subway Surfers</h1>
-        <iframe
-          id="game-element"
-          allowfullscreen
-          allow="autoplay; fullscreen; camera; focus-without-user-activation *; monetization; gamepad; keyboard-map *; xr-spatial-tracking; clipboard-write; web-share; accelerometer; magnetometer; gyroscope"
-          name="gameFrame"
-          scrolling="no"
-          sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-scripts allow-same-origin allow-downloads"
-          src="https://games.poki.com/5dd312fa-015f-11ea-ad56-9cb6d0d995f7?tag=pg-v5.12.0+93ff70938613f027ce1896733562bf479ccb4fbd&amp;site_id=3&amp;iso_lang=en&amp;country=UZ&amp;poki_url=https://poki.com/en/g/subway-surfers&amp;gdhoist=yes&amp;nonPersonalized=n&amp;familyFriendly=n&amp;categories=3,4,6,9,86,93,96,103,228,903,929,1103,1126,1137,1140,1143,1147,1156,1159,1160,1163,1185,1190&amp;special_condition=landing"
-          title="Game"
-          class="Clsn52HE2ZzhoBMbiAF6 w-full h-[600px]"
-        ></iframe>
+        <h1 class="text-white text-6xl font-medium mb-6 text-center">
+          Subway Surfers
+        </h1>
+        <div class="modal">
+          <div class="modalContent">
+              <p class="modalText"></p>
+              <button class="playAgain">Play Again!</button>
+          </div>
       </div>
+  
+      <div class="container">
+          <header>
+              <h1>Matching Game</h1>
+          </header>
+  
+          <section class="score-panel">
+            <ul class="stars">
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+            </ul>
+  
+              <span class="moves">3</span> Moves
+  
+            <span class="timer"></span>    
+  
+              <div class="restart">
+              <i class="fa fa-repeat"></i>
+            </div>
+          </section>
+  
+          <ul class="deck"></ul>
+      </div>
+  
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./js/game.js"></script>
   </body>
 </html>
